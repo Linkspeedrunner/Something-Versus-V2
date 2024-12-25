@@ -1,0 +1,485 @@
+[gd_scene load_steps=86 format=3 uid="uid://bk42bm2dml644"]
+
+[ext_resource type="Texture2D" uid="uid://bc8rth18a1ug" path="res://assets/sprites/characters/Kirbo/kirbo1.png" id="1_ewh0w"]
+[ext_resource type="Script" path="res://scenes/characters/kirbo.gd" id="1_l3fqu"]
+[ext_resource type="Texture2D" uid="uid://dx6mti1las001" path="res://assets/sprites/characters/Kirbo/kirbo8.png" id="1_mreuw"]
+[ext_resource type="Texture2D" uid="uid://ckqoxfr2beta8" path="res://assets/sprites/characters/Kirbo/kirbo2.png" id="2_2287v"]
+[ext_resource type="Texture2D" uid="uid://cnliy6q3g5htj" path="res://assets/sprites/characters/Kirbo/kirbo3.png" id="2_e7tja"]
+[ext_resource type="Texture2D" uid="uid://b2a355ygy0g0c" path="res://assets/sprites/characters/Kirbo/kirbo7.png" id="3_4k5lg"]
+[ext_resource type="Texture2D" uid="uid://oqlhjhtbt0ht" path="res://assets/sprites/characters/Kirbo/kirbo4.png" id="3_7fypc"]
+[ext_resource type="Texture2D" uid="uid://bgshwx1rf76gv" path="res://assets/sprites/characters/Kirbo/kirbo5.png" id="4_8dk4g"]
+[ext_resource type="Texture2D" uid="uid://cb7rvwei5fy0i" path="res://assets/sprites/characters/Kirbo/kirbo6.png" id="5_u3ur3"]
+[ext_resource type="Texture2D" uid="uid://ji08vxl6r8rh" path="res://assets/sprites/characters/Kirbo/kirbo67.png" id="6_advpk"]
+[ext_resource type="Texture2D" uid="uid://cwj5kos72ybxb" path="res://assets/sprites/characters/Kirbo/kirbo14.png" id="6_pleem"]
+[ext_resource type="Texture2D" uid="uid://du1muqgingu4r" path="res://assets/sprites/characters/Kirbo/kirbo15.png" id="7_wavnx"]
+[ext_resource type="Texture2D" uid="uid://bq6e0pglhnqct" path="res://assets/sprites/characters/Kirbo/kirbo68.png" id="7_y5l1a"]
+[ext_resource type="Texture2D" uid="uid://bl3b0xbj7n2g7" path="res://assets/sprites/characters/Kirbo/kirbo16.png" id="8_7cvka"]
+[ext_resource type="Texture2D" uid="uid://cns2gvb0c3mh8" path="res://assets/sprites/characters/Kirbo/kirbo69.png" id="8_8i64l"]
+[ext_resource type="Texture2D" uid="uid://d2ryo6sadxa2x" path="res://assets/sprites/characters/Kirbo/kirbo70.png" id="9_1e53c"]
+[ext_resource type="Texture2D" uid="uid://cvvyy7lf4ebg8" path="res://assets/sprites/characters/Kirbo/kirbo17.png" id="9_um6ax"]
+[ext_resource type="AudioStream" uid="uid://c8cq74tqmehoh" path="res://assets/sfx/characters/Kirbo/jump.ogg" id="10_5npol"]
+[ext_resource type="Texture2D" uid="uid://d2e7uqwt5wjsh" path="res://assets/sprites/characters/Kirbo/kirbo71.png" id="10_dgpb0"]
+[ext_resource type="Texture2D" uid="uid://dr2xt7xa8ywma" path="res://assets/sprites/characters/Kirbo/kirbo18.png" id="10_wby33"]
+[ext_resource type="AudioStream" uid="uid://dtxxq1dv6kcay" path="res://assets/sfx/characters/Kirbo/poyo.mp3" id="11_c38gj"]
+[ext_resource type="Texture2D" uid="uid://bdot1l8avis6y" path="res://assets/sprites/characters/Kirbo/kirbo19.png" id="11_oo52f"]
+[ext_resource type="Texture2D" uid="uid://bwtnyst4wujxw" path="res://assets/sprites/characters/Kirbo/kirbo73.png" id="11_rnuco"]
+[ext_resource type="Texture2D" uid="uid://k85m20d1jlel" path="res://assets/sprites/characters/Kirbo/kirbo74.png" id="12_7o1r7"]
+[ext_resource type="Texture2D" uid="uid://1kcph6by2nj6" path="res://assets/sprites/characters/Kirbo/kirbo20.png" id="12_f8ipv"]
+[ext_resource type="AudioStream" uid="uid://bs0qu01hpesaa" path="res://assets/sfx/characters/Kirbo/dead.mp3" id="12_m517q"]
+[ext_resource type="Texture2D" uid="uid://doqmbmoc86ioy" path="res://assets/sprites/characters/Kirbo/kirbo34.png" id="12_wynrm"]
+[ext_resource type="Texture2D" uid="uid://nhkuvbvagyb2" path="res://assets/sprites/characters/Kirbo/kirbo35.png" id="13_5vjhv"]
+[ext_resource type="Texture2D" uid="uid://brd3pvxfy2qtu" path="res://assets/sprites/characters/Kirbo/kirbo21.png" id="13_6sigi"]
+[ext_resource type="Texture2D" uid="uid://blndw7qpjuki0" path="res://assets/sprites/characters/Kirbo/kirbo83.png" id="13_bcfuw"]
+[ext_resource type="Texture2D" uid="uid://duh2jws0r8fsx" path="res://assets/sprites/characters/Kirbo/kirbo75.png" id="13_ieb8d"]
+[ext_resource type="Texture2D" uid="uid://crefc730pr6x3" path="res://assets/sprites/characters/Kirbo/kirbo76.png" id="14_cqhkh"]
+[ext_resource type="Texture2D" uid="uid://vitvks2kdryk" path="res://assets/sprites/characters/Kirbo/kirbo84.png" id="14_m8thg"]
+[ext_resource type="Texture2D" uid="uid://07qo3e1rope2" path="res://assets/sprites/characters/Kirbo/kirbo22.png" id="14_mj372"]
+[ext_resource type="Texture2D" uid="uid://dt2vwo4u1k2t3" path="res://assets/sprites/characters/Kirbo/kirbo85.png" id="15_kie00"]
+[ext_resource type="Texture2D" uid="uid://cxor88br5n0or" path="res://assets/sprites/characters/Kirbo/kirbo23.png" id="15_xvi77"]
+[ext_resource type="Texture2D" uid="uid://c106u302lxkrr" path="res://assets/sprites/characters/Kirbo/kirbo78.png" id="15_y4fbe"]
+[ext_resource type="Texture2D" uid="uid://c03ibh1hpstqr" path="res://assets/sprites/characters/Kirbo/kirbo86.png" id="16_76esj"]
+[ext_resource type="Texture2D" uid="uid://br12qm33tiwdj" path="res://assets/sprites/characters/Kirbo/kirbo25.png" id="16_n665x"]
+[ext_resource type="Texture2D" uid="uid://lcofwr047p50" path="res://assets/sprites/characters/Kirbo/kirbo26.png" id="17_a5hcg"]
+[ext_resource type="Texture2D" uid="uid://bkpsu84kh6xbs" path="res://assets/sprites/characters/Kirbo/kirbo87.png" id="17_ndr4d"]
+[ext_resource type="Texture2D" uid="uid://o4d14gwo1vty" path="res://assets/sprites/characters/Kirbo/kirbo27.png" id="18_3620e"]
+[ext_resource type="Texture2D" uid="uid://dfvt4wjimpwmc" path="res://assets/sprites/characters/Kirbo/kirbo89.png" id="19_dbf2p"]
+[ext_resource type="Texture2D" uid="uid://cvu8cy616rmv6" path="res://assets/sprites/characters/Kirbo/kirbo28.png" id="19_m1f56"]
+[ext_resource type="Texture2D" uid="uid://dayqq57av8a77" path="res://assets/sprites/characters/Kirbo/kirbo90.png" id="20_khsmf"]
+[ext_resource type="Texture2D" uid="uid://4t0xifpawyvq" path="res://assets/sprites/characters/Kirbo/kirbo29.png" id="20_vqwxd"]
+[ext_resource type="Texture2D" uid="uid://dppeeyrwqxalt" path="res://assets/sprites/characters/Kirbo/kirbo91.png" id="21_4bhh2"]
+[ext_resource type="Texture2D" uid="uid://dda3kplj52lyh" path="res://assets/sprites/characters/Kirbo/kirbo92.png" id="22_ppu1y"]
+[ext_resource type="Texture2D" uid="uid://b0xybqq1pt3j7" path="res://assets/sprites/characters/Kirbo/kirbo93.png" id="23_unw73"]
+[ext_resource type="Texture2D" uid="uid://b08f2ctt0u4e2" path="res://assets/sprites/characters/Kirbo/kirbo94.png" id="24_mon1j"]
+[ext_resource type="Texture2D" uid="uid://bqgdnfpswdumw" path="res://assets/sprites/characters/Kirbo/kirbo95.png" id="25_2sx8d"]
+[ext_resource type="Texture2D" uid="uid://doal76sw4smjn" path="res://assets/sprites/characters/Kirbo/kirbo96.png" id="26_vlfmg"]
+[ext_resource type="Texture2D" uid="uid://cdcj8sqrvd1w2" path="res://assets/sprites/characters/Kirbo/kirbo62.png" id="28_dkhnh"]
+[ext_resource type="Texture2D" uid="uid://bqhxe6aro8pe4" path="res://assets/sprites/characters/Kirbo/kirbo57.png" id="28_f126h"]
+[ext_resource type="AudioStream" uid="uid://8wu2jabarlq0" path="res://assets/sfx/Hits/punch-1.mp3" id="28_l27c4"]
+[ext_resource type="AudioStream" uid="uid://ca08qb6ab1t5a" path="res://assets/sfx/Hits/punch-2.mp3" id="29_c4jjo"]
+[ext_resource type="Texture2D" uid="uid://dl8llghoposwg" path="res://assets/sprites/characters/Kirbo/kirbo58.png" id="29_ogsvb"]
+[ext_resource type="Texture2D" uid="uid://b4ot1dgjg0gxv" path="res://assets/sprites/characters/Kirbo/kirbo63.png" id="29_t7puh"]
+[ext_resource type="AudioStream" uid="uid://cmxhknqxkey6l" path="res://assets/sfx/Hits/punch-3.mp3" id="30_2dpwc"]
+[ext_resource type="Texture2D" uid="uid://bn3d36b4ub8j" path="res://assets/sprites/characters/Kirbo/kirbo64.png" id="30_4ps0f"]
+[ext_resource type="Texture2D" uid="uid://ba6brnellghl6" path="res://assets/sprites/characters/Kirbo/kirbo59.png" id="30_v8ro5"]
+[ext_resource type="Texture2D" uid="uid://bvnmj6lpdptlr" path="res://assets/sprites/characters/Kirbo/kirbo60.png" id="31_fpmop"]
+[ext_resource type="Texture2D" uid="uid://sng6nbpcti3e" path="res://assets/sprites/characters/Kirbo/kirbo65.png" id="31_r6n60"]
+[ext_resource type="AudioStream" uid="uid://btruo4m1h5cpu" path="res://assets/sfx/Hits/slap.mp3" id="31_wfc1n"]
+[ext_resource type="Texture2D" uid="uid://cutqo8enostin" path="res://assets/sprites/characters/Kirbo/kirbo61.png" id="32_deu5k"]
+[ext_resource type="Texture2D" uid="uid://dr1ik8nx45ycv" path="res://assets/sprites/characters/Kirbo/kirbo36.png" id="33_s25d4"]
+[ext_resource type="Texture2D" uid="uid://c8kxm3j8i3ma7" path="res://assets/sprites/characters/Kirbo/kirbo37.png" id="34_kx6vt"]
+[ext_resource type="Texture2D" uid="uid://jp18ryjclyfg" path="res://assets/sprites/characters/Kirbo/kirbo38.png" id="35_jji3y"]
+[ext_resource type="Texture2D" uid="uid://b0k3knc4fnw82" path="res://assets/sprites/characters/Kirbo/kirbo39.png" id="36_rqxek"]
+[ext_resource type="Texture2D" uid="uid://15n7lw872p5v" path="res://assets/sprites/characters/Kirbo/kirbo40.png" id="37_6utg3"]
+[ext_resource type="Texture2D" uid="uid://bccjij0uxcsx7" path="res://assets/sprites/characters/Kirbo/kirbo79.png" id="40_2khll"]
+[ext_resource type="Texture2D" uid="uid://ddbrc0a3jp4mk" path="res://assets/sprites/characters/Kirbo/kirbo80.png" id="41_i5bvy"]
+[ext_resource type="Texture2D" uid="uid://b1enunict7sy7" path="res://assets/sprites/characters/Kirbo/kirbo81.png" id="42_f2mht"]
+[ext_resource type="Texture2D" uid="uid://umvp6pibwv1o" path="res://assets/sprites/characters/Kirbo/kirbo82.png" id="43_qi7jn"]
+[ext_resource type="Texture2D" uid="uid://bnull0phkoo47" path="res://assets/sprites/characters/Kirbo/kirbo33.png" id="50_prxf3"]
+[ext_resource type="Texture2D" uid="uid://n4sohappmimp" path="res://assets/sprites/characters/Kirbo/kirbo32.png" id="51_45qgs"]
+[ext_resource type="Texture2D" uid="uid://dv0lyy2npa7ki" path="res://assets/sprites/characters/Kirbo/kirbo30.png" id="52_pg54e"]
+[ext_resource type="Texture2D" uid="uid://dcw5x7fshkctu" path="res://assets/sprites/characters/Kirbo/kirbo31.png" id="53_1smg6"]
+[ext_resource type="AudioStream" uid="uid://bxlahvvawj1fj" path="res://assets/sfx/characters/Kirbo/warp_star.mp3" id="56_5clya"]
+[ext_resource type="AudioStream" uid="uid://d0lyuq3t8cejm" path="res://assets/sfx/characters/Kirbo/fart.mp3" id="57_pmudp"]
+[ext_resource type="AudioStream" uid="uid://bdw6mdt6lwudo" path="res://assets/sfx/Hits/sword.mp3" id="81_lpbgv"]
+[ext_resource type="AudioStream" uid="uid://dmjnnofcqhtev" path="res://assets/sfx/Hits/explosion.mp3" id="82_xlp6m"]
+[ext_resource type="AudioStream" uid="uid://dvbgvrkfaqjws" path="res://assets/sfx/characters/Kirbo/star_split.ogg" id="83_n2527"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_n3k3v"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_2287v")
+}],
+"loop": true,
+"name": &"damage",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("31_r6n60")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_4ps0f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_t7puh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_dkhnh")
+}],
+"loop": true,
+"name": &"dash",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 2.5,
+"texture": ExtResource("6_advpk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_y5l1a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_8i64l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_1e53c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_dgpb0")
+}],
+"loop": true,
+"name": &"down_attack",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 2.5,
+"texture": ExtResource("11_rnuco")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_7o1r7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ieb8d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_cqhkh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_y4fbe")
+}],
+"loop": true,
+"name": &"down_attack_air",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 2.5,
+"texture": ExtResource("13_bcfuw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_m8thg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_kie00")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_76esj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_ndr4d")
+}],
+"loop": true,
+"name": &"down_special_air",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_mreuw")
+}],
+"loop": true,
+"name": &"fall",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19_dbf2p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_khsmf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_4bhh2")
+}, {
+"duration": 3.5,
+"texture": ExtResource("22_ppu1y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_unw73")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_mon1j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_2sx8d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_vlfmg")
+}],
+"loop": true,
+"name": &"fend",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_wynrm")
+}],
+"loop": true,
+"name": &"floating",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_5vjhv")
+}],
+"loop": true,
+"name": &"floating_impulse",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_ewh0w")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_4k5lg")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 2.5,
+"texture": ExtResource("6_pleem")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_wavnx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_7cvka")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_um6ax")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_wby33")
+}],
+"loop": true,
+"name": &"punch 1",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 2.5,
+"texture": ExtResource("11_oo52f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_f8ipv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_6sigi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_mj372")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_xvi77")
+}],
+"loop": true,
+"name": &"punch 2",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 2.5,
+"texture": ExtResource("16_n665x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_a5hcg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_3620e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_m1f56")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_vqwxd")
+}],
+"loop": true,
+"name": &"punch 3",
+"speed": 25.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_e7tja")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_7fypc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_8dk4g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_u3ur3")
+}],
+"loop": true,
+"name": &"run",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("50_prxf3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_45qgs")
+}],
+"loop": true,
+"name": &"special",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("52_pg54e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_1smg6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_45qgs")
+}, {
+"duration": 9.0,
+"texture": ExtResource("50_prxf3")
+}],
+"loop": true,
+"name": &"special_start",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 2.5,
+"texture": ExtResource("15_y4fbe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_2khll")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_i5bvy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_f2mht")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_qi7jn")
+}],
+"loop": true,
+"name": &"up_air_attack",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("28_dkhnh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_t7puh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_4ps0f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_r6n60")
+}],
+"loop": true,
+"name": &"up_air_special",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 2.5,
+"texture": ExtResource("28_f126h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_ogsvb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_v8ro5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_fpmop")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_deu5k")
+}],
+"loop": true,
+"name": &"up_attack",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("33_s25d4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_kx6vt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_jji3y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_rqxek")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_6utg3")
+}],
+"loop": true,
+"name": &"warp_star",
+"speed": 15.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_chc3l"]
+size = Vector2(741, 694)
+
+[node name="Kirbo" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 3
+script = ExtResource("1_l3fqu")
+
+[node name="Sprite" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_n3k3v")
+animation = &"fend"
+frame = 7
+frame_progress = 0.908982
+
+[node name="Hitbox" type="CollisionShape2D" parent="."]
+position = Vector2(-15.5, 31)
+shape = SubResource("RectangleShape2D_chc3l")
+
+[node name="Jump" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_5npol")
+
+[node name="float" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_5npol")
+pitch_scale = 0.95
+
+[node name="Poyo" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("11_c38gj")
+
+[node name="Dead" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("12_m517q")
+
+[node name="Punch 1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("28_l27c4")
+
+[node name="Punch 2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("29_c4jjo")
+
+[node name="Punch 3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("30_2dpwc")
+
+[node name="Slap" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("31_wfc1n")
+
+[node name="warp_star" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("56_5clya")
+
+[node name="Fart" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("57_pmudp")
+volume_db = -5.0
+
+[node name="Sword" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("81_lpbgv")
+volume_db = 5.0
+
+[node name="Explosion" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("82_xlp6m")
+
+[node name="Star_split" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("83_n2527")
+volume_db = -5.0

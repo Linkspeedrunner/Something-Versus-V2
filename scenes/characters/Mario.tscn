@@ -1,0 +1,554 @@
+[gd_scene load_steps=91 format=3 uid="uid://chrecxilcyrsu"]
+
+[ext_resource type="Script" path="res://scenes/characters/mario.gd" id="1_rc02j"]
+[ext_resource type="Texture2D" uid="uid://bx6yyqmxf2eoc" path="res://assets/sprites/characters/Mario/Mario32.png" id="2_a5w62"]
+[ext_resource type="Texture2D" uid="uid://cu0ysh8mji1di" path="res://assets/sprites/characters/Mario/Mario22.png" id="2_hm8qp"]
+[ext_resource type="Texture2D" uid="uid://m2cbp441w2gs" path="res://assets/sprites/characters/Mario/Mario6.png" id="2_lexhm"]
+[ext_resource type="Texture2D" uid="uid://c7nutdhvyfhu5" path="res://assets/sprites/characters/Mario/Mario61.png" id="2_rrq5h"]
+[ext_resource type="Texture2D" uid="uid://cpuaja0xpw870" path="res://assets/sprites/characters/Mario/Mario39.png" id="2_tomqi"]
+[ext_resource type="Texture2D" uid="uid://dkttrv06x6smy" path="res://assets/sprites/characters/Mario/Mario33.png" id="3_42pl0"]
+[ext_resource type="Texture2D" uid="uid://5qxihwcagwkm" path="res://assets/sprites/characters/Mario/Mario62.png" id="3_a70gj"]
+[ext_resource type="Texture2D" uid="uid://mx52o7m5sud0" path="res://assets/sprites/characters/Mario/Mario40.png" id="3_fkubg"]
+[ext_resource type="Texture2D" uid="uid://bq0b6r4hb7vqr" path="res://assets/sprites/characters/Mario/Mario17.png" id="3_w13xk"]
+[ext_resource type="Texture2D" uid="uid://s4u787olk6n" path="res://assets/sprites/characters/Mario/Mario65.png" id="4_1oo4m"]
+[ext_resource type="Texture2D" uid="uid://b5xu57k5xitfb" path="res://assets/sprites/characters/Mario/Mario34.png" id="4_c20jm"]
+[ext_resource type="Texture2D" uid="uid://qwtrr3x0dvwb" path="res://assets/sprites/characters/Mario/Mario41.png" id="4_cu3ch"]
+[ext_resource type="Texture2D" uid="uid://bute4ga5rvdbr" path="res://assets/sprites/characters/Mario/Mario18.png" id="4_qggls"]
+[ext_resource type="Texture2D" uid="uid://py5pgcu7l878" path="res://assets/sprites/characters/Mario/Mario19.png" id="5_2gpfw"]
+[ext_resource type="Texture2D" uid="uid://j624rw5asbee" path="res://assets/sprites/characters/Mario/Mario35.png" id="5_a6wtp"]
+[ext_resource type="Texture2D" uid="uid://c8c18j8tbhjux" path="res://assets/sprites/characters/Mario/Mario42.png" id="5_a531a"]
+[ext_resource type="Texture2D" uid="uid://dmrxg0cjcvqae" path="res://assets/sprites/characters/Mario/Mario36.png" id="6_2rcgn"]
+[ext_resource type="Texture2D" uid="uid://d4e6dxjjdosiq" path="res://assets/sprites/characters/Mario/Mario20.png" id="6_fgue3"]
+[ext_resource type="Texture2D" uid="uid://consncer4fpxj" path="res://assets/sprites/characters/Mario/Mario43.png" id="6_tb3mw"]
+[ext_resource type="Texture2D" uid="uid://cd0mih0ro15qw" path="res://assets/sprites/characters/Mario/Mario21.png" id="7_gt6da"]
+[ext_resource type="Texture2D" uid="uid://rln5sisasbki" path="res://assets/sprites/characters/Mario/Mario37.png" id="7_hmceh"]
+[ext_resource type="Texture2D" uid="uid://bxvdwmovoo1a1" path="res://assets/sprites/characters/Mario/Mario7.png" id="8_8i4vs"]
+[ext_resource type="Texture2D" uid="uid://37mv8adws1bu" path="res://assets/sprites/characters/Mario/Mario38.png" id="8_e847k"]
+[ext_resource type="Texture2D" uid="uid://bx5mkyawhyf4p" path="res://assets/sprites/characters/Mario/Mario8.png" id="9_8hngf"]
+[ext_resource type="Texture2D" uid="uid://d074xp13it5dp" path="res://assets/sprites/characters/Mario/Mario9.png" id="10_oj6h3"]
+[ext_resource type="Texture2D" uid="uid://cmiv8cs0vawfs" path="res://assets/sprites/characters/Mario/Mario10.png" id="11_nsxei"]
+[ext_resource type="Texture2D" uid="uid://bgtwkij8kis1n" path="res://assets/sprites/characters/Mario/Mario11.png" id="12_2a463"]
+[ext_resource type="Texture2D" uid="uid://qi3xa8covf0u" path="res://assets/sprites/characters/Mario/Mario12.png" id="13_7po3j"]
+[ext_resource type="Texture2D" uid="uid://dyq1mguw8nbok" path="res://assets/sprites/characters/Mario/Mario45.png" id="14_1vn7k"]
+[ext_resource type="Texture2D" uid="uid://liw3lftdq8g3" path="res://assets/sprites/characters/Mario/Mario13.png" id="14_xw066"]
+[ext_resource type="Texture2D" uid="uid://coavhqalw33fs" path="res://assets/sprites/characters/Mario/Mario14.png" id="15_h4j45"]
+[ext_resource type="Texture2D" uid="uid://1j3bashali2c" path="res://assets/sprites/characters/Mario/Mario46.png" id="15_yrk8s"]
+[ext_resource type="Texture2D" uid="uid://bixacaqrmnbxd" path="res://assets/sprites/characters/Mario/Mario47.png" id="16_pl58x"]
+[ext_resource type="Texture2D" uid="uid://bn4oyipamktho" path="res://assets/sprites/characters/Mario/Mario15.png" id="16_pvnco"]
+[ext_resource type="Texture2D" uid="uid://dudvuqcvo1bej" path="res://assets/sprites/characters/Mario/Mario48.png" id="17_aac8q"]
+[ext_resource type="Texture2D" uid="uid://df0w8vhtnp18a" path="res://assets/sprites/characters/Mario/Mario16.png" id="17_i8ak1"]
+[ext_resource type="Texture2D" uid="uid://c81eppl6axbcx" path="res://assets/sprites/characters/Mario/Mario2.png" id="18_101xo"]
+[ext_resource type="Texture2D" uid="uid://t7o7ok5ufrn1" path="res://assets/sprites/characters/Mario/Mario49.png" id="18_uuftk"]
+[ext_resource type="Texture2D" uid="uid://c08xtajakl1gy" path="res://assets/sprites/characters/Mario/Mario3.png" id="19_2ye1r"]
+[ext_resource type="Texture2D" uid="uid://8knevfnbtsvj" path="res://assets/sprites/characters/Mario/Mario50.png" id="19_penb7"]
+[ext_resource type="Texture2D" uid="uid://bb8sxsfc3ih38" path="res://assets/sprites/characters/Mario/Mario4.png" id="20_ef05a"]
+[ext_resource type="Texture2D" uid="uid://clpfwqwjujfh6" path="res://assets/sprites/characters/Mario/Mario5.png" id="21_84j7y"]
+[ext_resource type="Texture2D" uid="uid://b4i47pc515hvy" path="res://assets/sprites/characters/Mario/Mario56.png" id="22_o66pt"]
+[ext_resource type="Texture2D" uid="uid://mocu05ngofqj" path="res://assets/sprites/characters/Mario/Mario25.png" id="23_ek3yc"]
+[ext_resource type="Texture2D" uid="uid://bt8yduehfv1i1" path="res://assets/sprites/characters/Mario/Mario57.png" id="23_rm2f1"]
+[ext_resource type="Texture2D" uid="uid://b84j26pi2pn73" path="res://assets/sprites/characters/Mario/Mario66.png" id="24_4ha7y"]
+[ext_resource type="Texture2D" uid="uid://b6l7kj1qsjacq" path="res://assets/sprites/characters/Mario/Mario58.png" id="24_gscbq"]
+[ext_resource type="Texture2D" uid="uid://daojno4rqiloo" path="res://assets/sprites/characters/Mario/Mario26.png" id="24_h4amd"]
+[ext_resource type="Texture2D" uid="uid://di51dxrkc8ayi" path="res://assets/sprites/characters/Mario/Mario1.png" id="25_2oqtf"]
+[ext_resource type="Texture2D" uid="uid://b4yh4fhqn1ibo" path="res://assets/sprites/characters/Mario/Mario59.png" id="25_q6ais"]
+[ext_resource type="Texture2D" uid="uid://751om8yywgr7" path="res://assets/sprites/characters/Mario/Mario69.png" id="25_rqmn7"]
+[ext_resource type="Texture2D" uid="uid://bmqprdsn0652u" path="res://assets/sprites/characters/Mario/Mario27.png" id="25_shb6v"]
+[ext_resource type="Texture2D" uid="uid://bdxisrlvrq4rm" path="res://assets/sprites/characters/Mario/Mario28.png" id="26_as57b"]
+[ext_resource type="Texture2D" uid="uid://de332ly8hbg7b" path="res://assets/sprites/characters/Mario/Mario60.png" id="26_u0ctl"]
+[ext_resource type="Texture2D" uid="uid://dakkf0aa60aoc" path="res://assets/sprites/characters/Mario/Mario68.png" id="26_vecwx"]
+[ext_resource type="Texture2D" uid="uid://mnctkgl7wd4k" path="res://assets/sprites/characters/Mario/Mario70.png" id="27_fcwci"]
+[ext_resource type="Texture2D" uid="uid://cq7lbpqwwahbe" path="res://assets/sprites/characters/Mario/Mario29.png" id="27_wwo51"]
+[ext_resource type="Texture2D" uid="uid://d1fnffnyhmwpe" path="res://assets/sprites/characters/Mario/Mario72.png" id="28_gg41l"]
+[ext_resource type="Texture2D" uid="uid://dtkisn6hxyfib" path="res://assets/sprites/characters/Mario/Mario30.png" id="28_gps72"]
+[ext_resource type="Texture2D" uid="uid://nnamkvkb16af" path="res://assets/sprites/characters/Mario/Mario31.png" id="29_da83u"]
+[ext_resource type="Texture2D" uid="uid://bxrajlaf1s54x" path="res://assets/sprites/characters/Mario/Mario73.png" id="29_hdwmn"]
+[ext_resource type="Texture2D" uid="uid://08o210t4av8w" path="res://assets/sprites/characters/Mario/Mario63.png" id="29_j7smo"]
+[ext_resource type="Texture2D" uid="uid://c7sr2uyny4o7p" path="res://assets/sprites/characters/Mario/Mario64.png" id="30_bp5yj"]
+[ext_resource type="Texture2D" uid="uid://dspxrrbwf1l2x" path="res://assets/sprites/characters/Mario/Mario67.png" id="30_j7y2l"]
+[ext_resource type="Texture2D" uid="uid://cjsvecbjhjo62" path="res://assets/sprites/characters/Mario/Mario71.png" id="31_8g7yi"]
+[ext_resource type="Texture2D" uid="uid://dtignk84aybhq" path="res://assets/sprites/characters/Mario/Mario51.png" id="41_txwji"]
+[ext_resource type="Texture2D" uid="uid://t0dh3i2x8eqp" path="res://assets/sprites/characters/Mario/Mario52.png" id="42_b8bai"]
+[ext_resource type="Texture2D" uid="uid://bucxc55v3qgh5" path="res://assets/sprites/characters/Mario/Mario53.png" id="43_8dwt0"]
+[ext_resource type="Texture2D" uid="uid://c6q88jt5lp1gi" path="res://assets/sprites/characters/Mario/Mario54.png" id="44_tt1br"]
+[ext_resource type="Texture2D" uid="uid://cwkfg0hql63s0" path="res://assets/sprites/characters/Mario/Mario55.png" id="45_kweie"]
+[ext_resource type="AudioStream" uid="uid://c07wm3m8w14k5" path="res://assets/sfx/characters/Mario/fend.wav" id="48_8nxbw"]
+[ext_resource type="AudioStream" uid="uid://bn5d12rbvh7fx" path="res://assets/sfx/characters/Mario/yah.wav" id="49_4ri30"]
+[ext_resource type="AudioStream" uid="uid://7xof2x8d2bfh" path="res://assets/sfx/characters/Mario/yahoo.wav" id="50_xk4q7"]
+[ext_resource type="AudioStream" uid="uid://042oc8glgxv" path="res://assets/sfx/characters/Mario/hoo hoo.wav" id="51_v7jn4"]
+[ext_resource type="AudioStream" uid="uid://w4bh8fuiecsm" path="res://assets/sfx/characters/Mario/Jump.mp3" id="52_oms13"]
+[ext_resource type="AudioStream" uid="uid://8wu2jabarlq0" path="res://assets/sfx/Hits/punch-1.mp3" id="53_t3ceq"]
+[ext_resource type="AudioStream" uid="uid://ca08qb6ab1t5a" path="res://assets/sfx/Hits/punch-2.mp3" id="54_xstxt"]
+[ext_resource type="AudioStream" uid="uid://cmxhknqxkey6l" path="res://assets/sfx/Hits/punch-3.mp3" id="55_yifka"]
+[ext_resource type="AudioStream" uid="uid://3pthm6uhx0i7" path="res://assets/sfx/characters/Mario/stomp.wav" id="56_v03fr"]
+[ext_resource type="AudioStream" uid="uid://btruo4m1h5cpu" path="res://assets/sfx/Hits/slap.mp3" id="62_pe7rb"]
+[ext_resource type="AudioStream" uid="uid://c565nqmekttry" path="res://assets/sfx/characters/Mario/S L A P.mp3" id="63_ois0o"]
+[ext_resource type="AudioStream" uid="uid://didmyd575q1ll" path="res://assets/sfx/characters/Mario/hoo.wav" id="69_cumkb"]
+[ext_resource type="AudioStream" uid="uid://d07bgrut66e8e" path="res://assets/sfx/characters/Mario/stomp_strong.wav" id="71_1xa75"]
+[ext_resource type="AudioStream" uid="uid://cgp2uw5txqtc4" path="res://assets/sfx/characters/Mario/dead.mp3" id="74_iiion"]
+[ext_resource type="AudioStream" uid="uid://dn211re13ek0w" path="res://assets/sfx/characters/Mario/Most_Powerfull_SLAP.mp3" id="75_gra03"]
+[ext_resource type="AudioStream" uid="uid://bf6m7jqvp4np1" path="res://assets/sfx/characters/Mario/Most_Powerfull_SLAP_2.mp3" id="76_iwk75"]
+[ext_resource type="AudioStream" uid="uid://8hlwfwms3t5k" path="res://assets/sfx/Hits/teleport.mp3" id="88_tt8y3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jl4my"]
+size = Vector2(447, 860)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bm2i6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_rrq5h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_a70gj")
+}],
+"loop": true,
+"name": &"BLJ",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_a70gj")
+}],
+"loop": true,
+"name": &"BLJ_impulse",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_1oo4m")
+}],
+"loop": true,
+"name": &"damage",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 7.0,
+"texture": ExtResource("2_tomqi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_tb3mw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_a531a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_cu3ch")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_fkubg")
+}],
+"loop": true,
+"name": &"dash_attack",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.5,
+"texture": ExtResource("2_a5w62")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_42pl0")
+}, {
+"duration": 6.0,
+"texture": ExtResource("4_c20jm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_a6wtp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_2rcgn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_hmceh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_e847k")
+}],
+"loop": true,
+"name": &"down_attack",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_fkubg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_cu3ch")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_a531a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_tb3mw")
+}],
+"loop": true,
+"name": &"down_jump_attack_roll",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.5,
+"texture": ExtResource("14_1vn7k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_yrk8s")
+}, {
+"duration": 5.0,
+"texture": ExtResource("16_pl58x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_aac8q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_uuftk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_penb7")
+}],
+"loop": true,
+"name": &"fend",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_hm8qp")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("24_4ha7y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_2oqtf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_rqmn7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_vecwx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_fcwci")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_gg41l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_2oqtf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_hdwmn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_j7y2l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_8g7yi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_2oqtf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_hdwmn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_rqmn7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_fcwci")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_2oqtf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_2oqtf")
+}],
+"loop": true,
+"name": &"idle_speed",
+"speed": 120.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_lexhm")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 2.0,
+"texture": ExtResource("22_o66pt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_rm2f1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_gscbq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_q6ais")
+}, {
+"duration": 5.0,
+"texture": ExtResource("26_u0ctl")
+}],
+"loop": true,
+"name": &"jump_attack",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("29_j7smo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_bp5yj")
+}],
+"loop": true,
+"name": &"jump_attack_fall",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.5,
+"texture": ExtResource("3_w13xk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_qggls")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_2gpfw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_fgue3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_gt6da")
+}],
+"loop": true,
+"name": &"kick 1",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_a70gj")
+}],
+"loop": true,
+"name": &"long_jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 2.5,
+"texture": ExtResource("8_8i4vs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_8hngf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_oj6h3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_nsxei")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_2a463")
+}],
+"loop": true,
+"name": &"punch 1",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 2.5,
+"texture": ExtResource("13_7po3j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_xw066")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_h4j45")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_pvnco")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_i8ak1")
+}],
+"loop": true,
+"name": &"punch 2",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_101xo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_2ye1r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_ef05a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_84j7y")
+}],
+"loop": true,
+"name": &"run",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("41_txwji")
+}, {
+"duration": 12.0,
+"texture": ExtResource("42_b8bai")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_8dwt0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_tt1br")
+}, {
+"duration": 10.0,
+"texture": ExtResource("45_kweie")
+}],
+"loop": true,
+"name": &"slap",
+"speed": 30.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("45_kweie")
+}],
+"loop": true,
+"name": &"slap_end",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("41_txwji")
+}],
+"loop": true,
+"name": &"slap_start",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("28_gg41l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_hdwmn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_8g7yi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_gg41l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_rqmn7")
+}],
+"loop": true,
+"name": &"teleport",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("23_ek3yc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_h4amd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_shb6v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_as57b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_wwo51")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_gps72")
+}, {
+"duration": 1.5,
+"texture": ExtResource("29_da83u")
+}],
+"loop": true,
+"name": &"up_attack",
+"speed": 20.0
+}]
+
+[node name="Mario" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 3
+script = ExtResource("1_rc02j")
+
+[node name="Hitbox" type="CollisionShape2D" parent="."]
+z_index = 1
+position = Vector2(-11, -22)
+shape = SubResource("RectangleShape2D_jl4my")
+
+[node name="Sprite" type="AnimatedSprite2D" parent="."]
+position = Vector2(-18, 0)
+sprite_frames = SubResource("SpriteFrames_bm2i6")
+animation = &"slap_end"
+
+[node name="Fend" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("48_8nxbw")
+volume_db = 10.0
+
+[node name="Yah" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("49_4ri30")
+
+[node name="Yahoo" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("50_xk4q7")
+
+[node name="Ho hoo" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("51_v7jn4")
+
+[node name="Retro Jump" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("52_oms13")
+volume_db = -10.0
+
+[node name="Retro Jump 2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("52_oms13")
+volume_db = -11.0
+
+[node name="Punch 1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("53_t3ceq")
+
+[node name="Punch 2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("54_xstxt")
+
+[node name="Punch 3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("55_yifka")
+
+[node name="Stomp" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("56_v03fr")
+volume_db = 10.0
+
+[node name="Stomp_strong" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("71_1xa75")
+volume_db = 10.0
+
+[node name="Slap" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("62_pe7rb")
+
+[node name="S L A P" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("63_ois0o")
+volume_db = 5.0
+pitch_scale = 0.95
+
+[node name="M E G A    S L A P" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("75_gra03")
+
+[node name="M E G A    S L A P2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("76_iwk75")
+
+[node name="Hoo" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("69_cumkb")
+volume_db = -5.0
+
+[node name="Dead" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("74_iiion")
+
+[node name="Teleport" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("88_tt8y3")
+volume_db = -5.0

@@ -1,0 +1,158 @@
+[gd_scene load_steps=16 format=3 uid="uid://dc50ysq5h8o28"]
+
+[ext_resource type="Script" path="res://scenes/UI/char_select.gd" id="1_yw05g"]
+[ext_resource type="Texture2D" uid="uid://bosgr1gjc8ph5" path="res://assets/sprites/UI/character_selection/Kirbo.png" id="2_xgbyb"]
+[ext_resource type="Texture2D" uid="uid://bejjgn8dfpp8v" path="res://assets/sprites/UI/character_selection/Speedrunner_Link.png" id="3_u1cnf"]
+[ext_resource type="Texture2D" uid="uid://b251nrhqrufvy" path="res://assets/sprites/UI/character_selection/Speedrunner_Mario.png" id="4_x88s8"]
+[ext_resource type="Texture2D" uid="uid://cc6f008ptv364" path="res://assets/sprites/UI/character_selection/SS_rank_brawl_meta_knight.png" id="5_50ulo"]
+[ext_resource type="Texture2D" uid="uid://d28tvbagowbqt" path="res://assets/sprites/UI/character_selection/cliche_arrow.png" id="6_3lskk"]
+[ext_resource type="FontFile" uid="uid://dx6ueb6oevldi" path="res://assets/fonts/Candy Beans.otf" id="7_lwhut"]
+[ext_resource type="Texture2D" uid="uid://brl4a60c56dgq" path="res://assets/sprites/UI/character_selection/black_background.png" id="8_331p1"]
+[ext_resource type="AudioStream" uid="uid://ddcwrifok82st" path="res://assets/sfx/UI/Windows_XP_Error.mp3" id="9_okd6n"]
+[ext_resource type="Texture2D" uid="uid://byhidm5b1qpao" path="res://assets/sprites/UI/character_selection/gear1.png" id="10_tjrsr"]
+[ext_resource type="Texture2D" uid="uid://bni824348po24" path="res://assets/sprites/UI/character_selection/gear2.png" id="11_783by"]
+[ext_resource type="Texture2D" uid="uid://vuf7wgr5dqc7" path="res://assets/sprites/UI/character_selection/gear3.png" id="12_nsd2i"]
+[ext_resource type="AudioStream" uid="uid://c4r08w73cn8ba" path="res://assets/music/01. Title.mp3" id="13_ph6nj"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qjmj5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_xgbyb")
+}],
+"loop": true,
+"name": &"Kirbo",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_u1cnf")
+}],
+"loop": true,
+"name": &"Link",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_x88s8")
+}],
+"loop": true,
+"name": &"Mario",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_50ulo")
+}],
+"loop": true,
+"name": &"Meta_Knight",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_xgbyb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_u1cnf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_x88s8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_50ulo")
+}],
+"loop": true,
+"name": &"random",
+"speed": 5.0
+}]
+
+[sub_resource type="LabelSettings" id="LabelSettings_iqvkj"]
+font = ExtResource("7_lwhut")
+font_size = 160
+outline_size = 35
+outline_color = Color(0, 0, 0, 1)
+
+[node name="Char select" type="Node2D"]
+script = ExtResource("1_yw05g")
+
+[node name="Player 1" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(400, 600)
+scale = Vector2(5, 5)
+sprite_frames = SubResource("SpriteFrames_qjmj5")
+animation = &"Mario"
+
+[node name="Player 2" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(1560, 600)
+scale = Vector2(5, 5)
+sprite_frames = SubResource("SpriteFrames_qjmj5")
+animation = &"Mario"
+
+[node name="ClicheArrow" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(400, 212)
+scale = Vector2(5, 5)
+texture = ExtResource("6_3lskk")
+
+[node name="ClicheArrow2" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(400, 1000)
+rotation = 3.14159
+scale = Vector2(5, 5)
+texture = ExtResource("6_3lskk")
+
+[node name="ClicheArrow3" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(1555, 212)
+scale = Vector2(5, 5)
+texture = ExtResource("6_3lskk")
+
+[node name="ClicheArrow4" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(1555, 1000)
+rotation = 3.14159
+scale = Vector2(5, 5)
+texture = ExtResource("6_3lskk")
+
+[node name="Label" type="Label" parent="."]
+texture_filter = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 498.0
+offset_right = 1468.0
+offset_bottom = 209.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+text = "Player Select"
+label_settings = SubResource("LabelSettings_iqvkj")
+metadata/_edit_use_anchors_ = true
+
+[node name="BlackBackground" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(990, 540)
+texture = ExtResource("8_331p1")
+
+[node name="Error" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_okd6n")
+
+[node name="TextureButton" type="TextureButton" parent="."]
+texture_filter = 1
+offset_left = 1689.0
+offset_top = 27.0
+offset_right = 1729.0
+offset_bottom = 67.0
+scale = Vector2(9.14923, 9.54239)
+texture_normal = ExtResource("10_tjrsr")
+texture_pressed = ExtResource("11_783by")
+texture_hover = ExtResource("12_nsd2i")
+metadata/_edit_use_anchors_ = true
+
+[node name="music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("13_ph6nj")
+autoplay = true
+parameters/looping = true
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
